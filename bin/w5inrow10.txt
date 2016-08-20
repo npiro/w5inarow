@@ -1,0 +1,11 @@
+Title of the program and version: Windows 5-in-a-row 1.0
+Suggested category: games
+Operating system: Windows 3.1x/95/NT
+Uploader E-mail Address: nnp@hp1.uib.es
+Distribution on CD-ROM(yes/no): no
+Description - 10 lines or less(Start on the next blank line):
+A nice and simple 5-in-a-row or Gomoku game which also let's you play
+any pieces in a row like tic-tac-toe, 6-in-a-row, ... It has some interesting
+options and an easy to use GUI.
+--------------------------------------------------------------------------------
+

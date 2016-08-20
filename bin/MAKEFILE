@@ -1,0 +1,107 @@
+# Wedit Makefile for project w5inarow
+CFLAGS=-IC:\lcc\include -DRANDMOVE -DDEFAULT_MAX_TREEWIDTH=40 -DQUIESCE -DTTABLE  -O  -p6
+CC=c:\lcc\bin\lcc.exe
+OBJS=\
+	w5inarow.obj \
+	menu2.res \
+	gettime.obj \
+	engine.obj \
+	dialog.obj
+
+LIBS=winmm.lib
+
+d:\nicolas\w5inarow\source\bin\w5inarow.exe:	$(OBJS) Makefile
+	c:\lcc\bin\lcclnk  -subsystem windows -o d:\nicolas\w5inarow\source\bin\w5inarow.exe $(OBJS) $(LIBS)
+
+# Build W5INAROW.C
+W5INAROW_C=\
+	C:\lcc\include\windows.h\
+	C:\lcc\include\win.h\
+	C:\lcc\include\limits.h\
+	C:\lcc\include\stdarg.h\
+	C:\lcc\include\mmsystem.h\
+	C:\lcc\include\fcntl.h\
+	C:\lcc\include\stdio.h\
+	C:\lcc\include\_syslist.h\
+	C:\lcc\include\stdlib.h\
+	C:\lcc\include\stddef.h\
+	C:\lcc\include\string.h\
+	C:\lcc\include\io.h\
+	C:\lcc\include\sys\stat.h\
+	C:\lcc\include\math.h\
+	C:\lcc\include\commdlg.h\
+	C:\lcc\include\time.h\
+	d:\nicolas\w5inarow\source\w5inarow.h\
+	d:\nicolas\w5inarow\source\5inarow2.h\
+	d:\nicolas\w5inarow\source\menu.h\
+	d:\nicolas\w5inarow\source\macro.h\
+
+w5inarow.obj: $(W5INAROW_C) d:\nicolas\w5inarow\source\w5inarow.c
+	$(CC) -c $(CFLAGS) d:\nicolas\w5inarow\source\w5inarow.c
+
+# Build menu2.res
+MENU2_RC=\
+	C:\lcc\include\windows.h\
+	C:\lcc\include\win.h\
+	C:\lcc\include\limits.h\
+	C:\lcc\include\stdarg.h\
+	d:\nicolas\w5inarow\source\menu.h\
+
+menu2.res:	$(MENU2_RC) d:\nicolas\w5inarow\source\menu2.rc
+	lrc -Id:\nicolas\w5inarow\source -IC:\lcc\include  d:\nicolas\w5inarow\source\menu2.rc
+
+# Build GETTIME.C
+GETTIME_C=\
+	C:\lcc\include\windows.h\
+	C:\lcc\include\win.h\
+	C:\lcc\include\limits.h\
+	C:\lcc\include\stdarg.h\
+	C:\lcc\include\stdlib.h\
+	C:\lcc\include\stddef.h\
+	C:\lcc\include\_syslist.h\
+	d:\nicolas\w5inarow\source\gettime.h\
+
+gettime.obj: $(GETTIME_C) d:\nicolas\w5inarow\source\gettime.c
+	$(CC) -c $(CFLAGS) d:\nicolas\w5inarow\source\gettime.c
+
+# Build ENGINE.C
+ENGINE_C=\
+	C:\lcc\include\windows.h\
+	C:\lcc\include\win.h\
+	C:\lcc\include\limits.h\
+	C:\lcc\include\stdarg.h\
+	C:\lcc\include\stdio.h\
+	C:\lcc\include\_syslist.h\
+	C:\lcc\include\stdlib.h\
+	C:\lcc\include\stddef.h\
+	C:\lcc\include\string.h\
+	C:\lcc\include\time.h\
+	d:\nicolas\w5inarow\source\gettime.h\
+	C:\lcc\include\math.h\
+	d:\nicolas\w5inarow\source\w5inarow.h\
+	d:\nicolas\w5inarow\source\5inarow2.h\
+	d:\nicolas\w5inarow\source\macro.h\
+
+engine.obj: $(ENGINE_C) d:\nicolas\w5inarow\source\engine.c
+	$(CC) -c $(CFLAGS) d:\nicolas\w5inarow\source\engine.c
+
+# Build DIALOG.C
+DIALOG_C=\
+	C:\lcc\include\stdio.h\
+	C:\lcc\include\_syslist.h\
+	C:\lcc\include\windows.h\
+	C:\lcc\include\win.h\
+	C:\lcc\include\limits.h\
+	C:\lcc\include\stdarg.h\
+	C:\lcc\include\stdlib.h\
+	C:\lcc\include\stddef.h\
+	C:\lcc\include\string.h\
+	d:\nicolas\w5inarow\source\w5inarow.h\
+	d:\nicolas\w5inarow\source\5inarow2.h\
+	d:\nicolas\w5inarow\source\menu.h\
+	d:\nicolas\w5inarow\source\version.h\
+	d:\nicolas\w5inarow\source\macro.h\
+
+dialog.obj: $(DIALOG_C) d:\nicolas\w5inarow\source\dialog.c
+	$(CC) -c $(CFLAGS) d:\nicolas\w5inarow\source\dialog.c
+

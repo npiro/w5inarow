@@ -1,0 +1,80 @@
+======================================================================
+                    FTP Upload Submission Template
+                  For WinSite(tm) Windows 95 Archive
+======================================================================
+UPLOADING FILES TO WinSite(tm):
+
+ALL submissions to the WinSite(tm) Windows Archive must be accompanied by
+this template, with the proper fields filled in.  SUBMISSIONS THAT DO
+NOT INCLUDE A CORRECTLY FILLED OUT TEMPLATE, WILL BE IMMEDIATELY
+DELETED.  
+
+WHERE SHOULD YOUR FILES GO?
+
+This upload directory is for Windows 95 programs.  If your program
+requires Windows NT, it should be uploaded to /uploads/winnt.
+
+Some developers are bundling Win3, Win32s, Win95, and WinNT
+executables into one archive.  Please upload such archives only ONCE.
+If the archive includes a version that requires WinNT, upload the
+archive to /uploads/winnt, MAKING SURE to use the WinNT Upload
+Template.  We will put copies of your program into each appropriate
+area (win3, win95, winnt) if you correctly fill out the template and
+upload your archive to the correct area.
+
+INSTRUCTIONS:
+
+1) Make a copy of this file.  Edit it, filling in the form below.
+Place the information about the program _AFTER_ each colon ":".  Save
+your modified file as <program>.tml where <program> is the name of the
+program you will upload (with the .zip extension).
+
+2) Upload your program in ZIP or EXE format, make sure to use your software's
+"binary" or "tenex" mode.
+
+3) Upload the modified template file as <program>.tml.  For example,
+if your program was uploaded as xyz23.zip, you should upload the
+template as xyz23.tml.
+
+**********************************************************************
+              FILL-IN FORM FOR WINDOWS95 APPLICATIONS
+                    THIS INFORMATION IS REQUIRED
+**********************************************************************
+Program Archive Name (e.g. xyz23.zip): w5inrow10.zip
+Program Name/Title, 25 characters or less (e.g. Super PacNerd): Windows 5-in-a-row
+Program Version, 12 characters or less (e.g. 2.01C): 1.0
+Program Description (55 chars or less): A nice and simple program that plays a 5-in-a-row game (also known as Gomoku) and X-in-a-row (any number of pieces in a row). It has some nice options and a good
+computer player.
+Does this archive include a version compiled for Win 3.x? (yes/no): yes
+Does this archive include a version compiled for Win32s? (yes/no): yes
+Does this archive include a version compiled for Win95? (yes/no): yes
+Is this a demo version? (yes/no): no
+Suggested directory for placement (e.g. programr/vbasic): games
+If this replaces an older version, name of the outdated program (e.g. xyz21.zip):
+
+**********************************************************************
+     INFORMATION FOR SHAREWARE AUTHORS AND SOFTWARE COMPANIES
+                    THIS INFORMATION IS MANDATORY
+			    AND CONFIDENTIAL
+**********************************************************************
+Fill out the information below if you are the author, or represent the
+author or company.  This section is especially important for shareware
+authors.  This information will provide users a way to find more
+information about the program or company, and search for particular
+authors, companies, addresses, etc.
+**********************************************************************
+Program Author, 30 characters or less (e.g. John Smith): Nicolas Piro
+Company Name (e.g. NetTechies Inc.):
+Contact Email Address: nnp@hp1.uib.es
+Contact WWW URL:
+Contact Postal Address: 
+  Line1: C/ Obispo Moncadas 10, 2A
+  Line2: 07014 Palma de Mallorca
+  Line3: Balearic Islands
+  Line4: Spain
+Contact Telephone Number: 34 971285308
+
+**********************************************************************
+      NOTES: In the space below, please put any special notes to the
+archive maintainers (not the program users) about this upload.
+**********************************************************************

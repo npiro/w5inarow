@@ -1,0 +1,552 @@
+{\rtf1\ansi
+{\fonttbl
+\f0\froman Times New Roman;
+\f1\fdecor Courier New;
+\f2\fswiss Arial;}
+\sl010 \f0 \fs24
+{\colortbl; \red128\green0\blue0; \red0\green0\blue128;}
+#{\footnote contents}
+${\footnote Contents}
+\fs28\b
+Introduction\par
+\fs24\plain
+Welcome to Windows 5-in-a-row. This application will allow you to
+ play a game of 5-in-a-row, also known as Gomoku or Renju, against
+ the computer. The object of the game is to connect 5 ticks in a row before
+ the opponent. Don't worry if the computer beats you. With this program you
+ will soon learn some skill and you'll surely be able to win.\par
+To place a cross in a square position the mouse pointer on the desired square
+ and press the left mouse button. Then the computer will start thinking and
+ will eventually make a move.
+If you aren't able to beat the computer at the beginning level
+ you can adjust the {\uldb game skill}{\v skill}.\par
+You can also adjust the {\uldb board size}{\v props} and
+ the {\uldb number of connections to win}{\v props}
+\par\par
+\fs28\b
+Menu items:\par
+\fs24\plain\i
+Game\par
+{\uldb New}{\v new_game}\par
+{\uldb Comp vs Comp}{\v both}\par
+{\uldb Move Now}{\v force}\par
+{\uldb Open}{\v open}\par
+{\uldb Save}{\v save}\par
+{\uldb Exit}{\v exit}\par
+Edit\par
+{\uldb Undo}{\v undo}\par
+{\uldb Setup Board}{\v setup}\par
+Options\par
+{\uldb Flash}{\v flash}\par
+{\uldb Flash delay}{\v flashing_delay}\par
+{\uldb New tick set}{\v new_tick_set}\par
+{\uldb Sound}{\v sound}\par
+Music\par
+  {\uldb Music}{\v music}\par
+  {\uldb Play Music file}{\v play_music_file}\par
+{\uldb Search Stats}{\v stats}\par
+{\uldb Game Properties}{\v properties}\par
+Window Size\par
+  {\uldb Large}{\v wsize}\par
+  {\uldb Medium}{\v wsize}\par
+  {\uldb Small}{\v wsize}\par
+Skill\par
+{\uldb Depth}{\v depth}\par
+{\uldb Search time}{\v search_time}\par
+{\uldb Set clock time}{\v set_clock_time}\par
+{\uldb Timed game}{\v timed_game}\par
+{\uldb Iterative deepening}{\v iterative_deepening}\par
+{\uldb Agressive mode}{\v agressive_mode}\par
+{\uldb Search extensions}{\v extensions}\par
+Help\par
+{\uldb Contents}{\v help_contents}\par
+{\uldb Using help}{\v using_help}\par
+{\uldb About 5-in-a-row}{\v about}\par
+{\uldb Version}{\v version}\par
+\plain
+\par
+\fs28\b
+{\uldb About the program}{\v about_program}\par
+\fs24\plain\par
+
+\page
+\page
+#{\footnote skill}
+${\footnote Game Skill}
+\fs28\b
+Game Skill\par
+\fs24\plain
+To set the Game Skill you must set the fixed search depth
+ (the amount of moves ahead the computer searches). The lower the search
+ depth the poorer the skill will be.\par
+To set the Search Depth you can click on the Depth button of the Pallete
+ or you can click on the Skill menu and then on Depth... This will
+ open a window asking you for the search depth. Just type in a number.\par
+Note: Search Depth must be between 1 and 9.
+\par
+\page
+
+#{\footnote props}
+${\footnote Board Size and Connections to Win}
+\fs28\b
+Board Size and Connections to Win\par
+\fs24\plain
+To set the board size (number of rows or columns) and the number of
+ connections to win you can click on the Props. button on the Pallete
+ window or you can go to Options-Game Properties in the menu.\par
+A small window will appear and it will ask you to set the board size
+ and the number of connections to win. There will also be a check button
+ to enable the {\uldb standard gomoku rules}{\v gomoku_rules}, which implies
+ that the board is 19x19 and you need to connect five pieces in a row to win.
+ After you finish just click OK to allow the new settings or CANCEL
+ to ignore them.\par
+You can play tic-tac-toe by setting both of them to 3.\par
+You can try any combination where the board size is between 3 and 19
+ and the number of connections between 1 and 10. If you experiment a bit
+ you will probably find out that any game with less than five connections to win
+ and with a board size greater than the number of connected pieces needed
+ to win can be always won by the player that starts.\par
+The games with more than five connections to win are very interesting but
+ difficult. Each type of game has a different strategy.\par
+It is also a fact that the first player in a 5-in-a-row game can guarrentee
+ a win, but it is quite difficult. In the real Gomoku game this problem is
+ solved forcing the first player to make it's second move 2 squares away from
+ the center squares. In this program this is not applied, but I plan to do it
+ soon.
+\par
+\page
+#{\footnote new_game}
+${\footnote New Game}
+\fs28\b
+New Game\par
+\fs24\plain
+The Game-New menu item starts a new game reseting the board keeping
+ the previous board properties. A key short cut for this is Crtl-N.
+ Another possibility to start a new game is to click on the New button
+ at the Pallete window.
+\par
+\page
+#{\footnote both}
+${\footnote Two computers game}
+\fs28\b
+Two computers game\par
+\fs24\plain
+This utility allows you to make the computer play a game against itself.\par
+When you sellect this from the menu, by typing Ctrl-B or by clicking on the
+ C. vs C. button at the Pallete window, you are asked to introduce
+ computer 1's search depth and computer 2's search depth. After doing this
+ the computer starts playing the game placing ticks on the board. You may
+ force the computer to move by pressing the Move Now button, by clicking
+ the \iGame-Move Now\plain menu item or with Ctrl-F. To stop the two
+ computers game just click one more time on the C. vs C. Pallete button or
+ click \iGame-Comp vs Comp\plain.
+\par
+\page
+#{\footnote force}
+${\footnote Forcing the computer to move}
+\fs28\b
+Forcing the computer to move\par
+\fs24\plain
+Use this to force the computer to make a move when it's thinking. You can
+ use this in a normal game vs the computer or in a two computers game.\par
+This is also used to make the computer move when it's your turn, i.e. making it
+ move first at the starting position or making it move when it's your turn
+ at any position, in order to pass a move.\par
+A key shortcut for this is Ctrl-F and the Pallete button for this is the
+ Move Now one.
+\par\page
+#{\footnote open}
+${\footnote Opening a saved game}
+\fs28\b
+Opening a saved game\par
+\fs24\plain
+This is used to open a saved game with the Save command.\par
+When you sellect this a window is opened asking you to sellect the game to
+ be opened. You may browse the different drives until you find the desired
+ game. Then just click on it and press OK. If you don't want any game to
+ be loaded just press CANCEL.\par
+A key shortcut for this is Ctrl-O and you may access it with the Open button
+ int the Pallete window.
+\par\page
+#{\footnote save}
+${\footnote Saving a game to disk}
+\fs28\b
+Saving a game to disk\par
+\fs24\plain
+Use this to save the current game to the hard drive.\par
+When you sellect this a window is opened asking you to write the name of
+ the file to save the game. Let the file finish with the .fir extension.
+ After writing the file name and sellecting the desired directory to save
+ the file press OK. If you don't want to save the game press CANCEL.\par
+You may access this by clicking on the Save button in the Pallete window.
+\par\page
+#{\footnote exit}
+${\footnote Exiting the application}
+\fs28\b
+Exiting the application\par
+\fs24\plain
+This quits the game.\par
+A key shortcut for this is Ctrl-Q. You may also quit with the Exit button in
+ the Pallete window.
+\par\page
+
+#{\footnote undo}
+${\footnote Undo}
+\fs28\b
+Undoing a move\par
+\fs24\plain
+The Edit-Undo menu item takes back a whole move, that is the computer's move
+ and the player's one. You can undo a move an unlimited number of
+ times in a game.\par\page
+#{\footnote setup}
+${\footnote Setting up the board}
+\fs28\b
+Setting up the board\par
+\fs24\plain
+This allows you to set up any possible position in the board.\par
+To place a cross in the board press the left mouse button on the desired
+ square. To place a circle press the right mouse button.\par
+Notice that the menu bar is changed and only an Edit menu appears.
+ The items of this menu are the following:\par\i
+ Clear Board: \plain Click on this to empty the board.\par\i
+ Done: \plain Click on this when you are finished setting up the position. When
+ you do this a window will appear asking who's turn it is. Sellect the
+ desired button and then press OK.
+\par\page
+
+#{\footnote flash}
+${\footnote Flash}
+\fs28\b
+Flash\par
+\fs24\plain
+This toggles the flashing options, which makes the tick blink after the
+ computer makes it's move. If this menu item is checked it means that the
+ flashing option is enabled. Otherwise the option is disabled. You may set
+ the rate of the flashing with the {\uldb Flashing delay}{\v flashing_delay}
+ menu item.
+\par\page
+
+#{\footnote flashing_delay}
+${\footnote Flashing delay}
+\fs28\b
+Flashing delay\par
+\fs24\plain
+This opens a dialog box which allows you to set the rate of the flashing.
+ Type in the desired rate in miliseconds per flash.
+\par\page
+#{\footnote extensions}
+${\footnote Search extensions}
+\fs28\b
+Enabling and disabling search extensions\par
+\fs24\plain
+The Skill-Search extensions menu item toggles the search extensions.\par
+Search extensions is a tecnique for preventing the horizon effect in a search.
+The horizon effect is due to the fact that the engine only
+searches to a fixed depth and returns the board score of that position. But
+ what happends if the one move later a player has a winning move? The computer
+ just wouldn't have seen it and it would think that the move that takes to
+ that position is good, even though it loses.\par
+So with the search extensions the computer doesn't return the score of a position
+ immediatly after the search depth is arrived. It first looks for possible winning
+ moves and takes the search a couple of plies ahead to see what happends.\par
+The implementation of this in this program has become something difficult. The
+ 1.3 version let's you enable it and it will eventually work, but it is yet to
+ slow to be used practicaly. It is always more effective to set the search depth
+ a bit higher. But I'm working on this and I hope I get it improved soon.
+\par\page
+#{\footnote new_tick_set}
+${\footnote New tick set}
+\fs28\b
+Enabling/Disabling the new tick set\par
+\fs24\plain
+The Options-New tick set menu item toggles the new tick set on and of. There
+ are now two sets of ticks: the usual O and X and a nicer set that I've been
+ working on.\par\page
+#{\footnote sound}
+${\footnote Enabling and disabling multimedia sound}
+\fs28\b
+Enabling/Disabling multimedia sound\par
+\fs24\plain
+The Options-Sound menu item toggles the multimedia sound. If you tick this
+ item sound will be enabled and you should here some noises from your speakers
+ whenever you place a tick. If you don't here anything it's because your
+ soundcard isn't working properly, it isn't installed or the volume is too low.
+\par\page
+#{\footnote Music}
+${\footnote Enabling and Disabling music}
+\fs28\b
+Enabling/Disabling the music\par
+\fs24\plain
+The Options-Music-Music menu item toggles the music, that is it start's and
+ stops playing Music files, which at the moment are only MIDI files.
+ When you enable the Music a window appears allowing you to enter a MIDI file
+ to play. Just select the desired MIDI file and click "OK" to play it or
+ "Cancel" if you don't want to play it.
+\par\page
+#{\footnote play_music_file}
+${\footnote Playing a music file}
+\fs28\b
+Playing a music file\par
+\fs24\plain
+The Options-Music-Play music file menu item allows you to play a MIDI file
+ if you have a soundcard installed correctly.\par
+When you click on this item a Windows will appear asking you for a MIDI file
+ to play. Select the desired MIDI file and click "OK" to play it or just click
+ "Cancel" if you don't want to play any MIDI file.
+\par\page
+#{\footnote stats}
+${\footnote Search Stats}
+\fs28\b
+Search Statistics\par
+\fs24\plain
+This menu item is used to display the Search Stats. A window will appear
+ showing some information about the searching. This includes the following:\par
+*Score: Displays the evaluation for the actual board position
+ after the given search depth. This may vary during the search because the
+ engine might find better moves that give better scores. The position
+ evaluation is a numerical value determinated by different factors such as
+ the number of non-blocked connected pieces, the number of blocked opponent
+ pieces and the number of moves in a forced win line. The forced win value
+ is equal to 1000-number of moves for a forced win.\par
+*Nodes: This shows the number of moves the computer is thinking or
+ has thought in the last search. This strongly deppends of the search depth.\par
+*Nodes/Sec: This determinates the speed of the search, the number of moves
+ search per second. This strongly depends of the board size and the computer
+ processing speed. This is useful for testing and compering different
+ computers.\par
+On my PII@233MHz with 32Mbytes of RAM in a 19x19 board, at the initial
+ position and with the search depth fixed to 6, the computer searches at about
+ 16000 Nodes/Sec and in a 10x10 board at aboat 61000 Nodes/Sec
+}\par\page
+#{\footnote properties}
+${\footnote Game Properties}
+\fs28\b
+Game properties\par
+\fs24\plain
+This allows you to set the board size and the number of connected pieces
+ you need to win. It also let's you set the {\uldb standard gomoku rules}{\v gomoku_rules}
+ on. See the {\uldb Board size and connections to win}{\v props}
+ section.
+\par
+\page
+#{\footnote gomoku_rules}
+${\footnote Standard Gomoku rules}
+\fs28\b
+Standard Gomoku rules\par
+\fs24\plain
+It is demonstrated that a typical five in a row game with a 19x19 board can
+ be always won by the first to move. But this was known by the ancient oriental
+ guys, who came up with a way of preventing this. They introduced some simple
+ rules that make things more even. These are the following:\par
+ *The first player to move must place it's first piece in the center square.
+ This square is marked in the standard gomoku board. In this application it's the
+ center brown square.\par
+ *The second player to move can place it's piece anywhere he wants.\par
+ *The first player to move must place it's second piece three squares away
+ from his first piece. In other words, he can't put his second piece in the
+ the 5x5 squares zone marked in the standard gomoku board. In this application
+ this zone is marked with a brown line.\par
+ *In the rest of the game both players may place their pieces anywhere they
+ like.\par
+There is another variation of the game which introduces a new rule: to win a
+ game a player must connect exactly five pieces in a row. He may not connect
+ more than five. Otherwise he wouldn't win the game.\par
+This rule isn't applied in this application but I plan to do it soon.
+\par
+\page
+
+#{\footnote wsize}
+${\footnote Window size}
+\fs28\b
+Window size\par
+\fs24\plain
+The Options-Window size-Large/Medium/Small menu items allow you to set
+ the main window to three different sizes.\par
+Each window size is appropriate for a given screen resolution. The
+ Large window size is recommended for a 1024x768 or greater resolution. The
+ Medium size is recommended for an 800x600 resolution. The Small window size
+ is normally used with a 640x480 resolution.\par
+The size is set automatically when the program is executed so you
+ shouldn't need to change the window size at any time, unless you're not
+ confortable with the given size.
+\par
+\page
+#{\footnote depth}
+${\footnote Search depth}
+\fs28\b
+Depth\par
+\fs24\plain
+The Skill-depth menu item allows you to set the search depth of the
+ computer player. This is how many moves ahead (plies) the computer thinks.
+ This menu item will open a dialog box which will allow you to set the
+ desired search depth. Note: the search depth must be between 1 and 9.\par
+ Also see the {\uldb Game skill}{\v skill} topic.
+\par
+\page
+#{\footnote search_time}
+${\footnote Search time}
+\fs28\b
+Search time\par
+\fs24\plain
+The Skill-Search time menu item allows the user to set a fixed time
+ for the engine to search when it is in iterated deepening mode, but not in
+ timed game mode. To set the total game time see {\uldb Setting clock time}{\v set_clock_time}\par
+When you select this menu item a dialog window is open. Set the desired search
+ time in seconds and hit OK to validate it.
+\par\page
+#{\footnote set_clock_time}
+${\footnote Set clock time}
+\fs28\b
+Setting the clock time\par
+\fs24\plain
+The Skill-Set clock time menu item allows you to set the total game time or
+ the clock time. Set the desired time in seconds and hit OK to validate it.
+\par\page
+#{\footnote timed_game}
+${\footnote Timed game}
+\fs28\b
+Timed game\par
+\fs24\plain
+The Skill-Timed game menu item lets you set the game mode to Timed game. In this
+ game mode a clock is used to play the game and when a player's time is up
+ he loses. You may set the clock time with the {\uldb Set clock time}{\v set_clock_time}
+ menu item in the Skill menu.\par
+Note that this mode needs iterative deepening to be on so if you enable this
+ iterative deepening will be automatically enabled. See {\uldb Iterative deepening}{\v iterative_deepening}
+ for more information.
+\par\page
+#{\footnote iterative_deepening}
+${\footnote Iterative deepening}
+\fs28\b
+Iterative deepening\par
+\fs24\plain
+The Skill-Iterative deepening menu item allows you to enable/disable iterative
+ deepening mode.\par\par
+Iterative deepening is a tecnique oftenly used in two players artificial
+ intelligence games. It basically makes the computer search a position
+ progresively one ply deeper until a given search time or a fixed depth is
+ reached. This way the computer always has a move to make not like in
+ a fixed depth search where the search time might be reached without any
+ useful information from the search. Another important benefit from it
+ is move ordering. After a search for a given depth is finished the moves
+ are ordered according to the obtained score for each one of them. This optimizes
+ the search for the next one-ply-deeper search generating greater cuttoffs.\par
+In short: iterative deepening allows timed play. You can either play a
+ timed game with a clock, in which a player loses if his time runs out, or just
+ set the engine to search for a given number of seconds.\par
+See the {\uldb timed game}{\v timed_game}, the {\uldb set clock time}{\v set_clock_time}
+ and the {\uldb search time}{\v search_time} topics for more information.
+\par\page
+#{\footnote agressive_mode}
+${\footnote Agressive mode}
+\fs28\b
+Agressive mode\par
+\fs24\plain
+The Skill-Agressive mode menu item allows you to toggle between agressive mode
+ and non-agressive mode or defensive mode. The difference between these
+ two modes is in the playing style of the computer. In agressive mode the
+ computer will prefer connecting it's own pieces than preventing it's opponent
+ in connecting pieces. But the computer will attempt to prevent the opponent's
+ piece connections if it find's them very threatening. In defensive mode
+ the computer plays a quiter game and we could say it plays worse.\par
+On the other hand, the agressive mode improves move ordering and will therefor
+ play stronger and faster. the defensive mode makes the computer omit some
+ important moves, most of all at the edges of the board. The difference
+ between the two settings is strategical and not tactical. In other words, the
+ computer seems to have more knowledge of the game in agressive mode than in
+ defensive mode.\par
+So if you can't win the computer in agressive mode just toggle to defensive
+ mode and try it then. Maybe then it'll be at your level!!\par
+Also see the {\uldb Game skill}{\v skill} topic.
+\par
+\page
+
+#{\footnote help_contents}
+${\footnote Help Contents}
+\fs28\b
+Help contents\par
+\fs24\plain
+The Help-Contents menu item will display this help file.
+\par
+\page
+#{\footnote using_help}
+${\footnote Using help}
+\fs28\b
+Using help\par
+\fs24\plain
+The Help-Using help menu item will display a Windows help file to learn how
+ to use Windows help.
+\par
+\page
+
+#{\footnote about}
+${\footnote About W-5-in-a-row}
+\fs28\b
+About Windows 5-in-a-row\par
+\fs24\plain
+The Help-About 5-in-a-row menu item will display information about the
+ program and the author.\par
+For more information, bug reports, suggestions or anything you want
+ contact Nicolas Piro at nnp@hp1.uib.es\par
+I'll be glad to know what you think about the program.
+\par
+\page
+#{\footnote version}
+${\footnote Program version}
+\fs28\b
+Program version\par
+\fs24\plain
+The Help-Version menu item opens a windows showing the actual version of the
+program.\par\page
+#{\footnote about_program}
+${\footnote About the program}
+\fs28\b
+About the program\par
+\fs24\plain
+Windows 5-in-a-row was written in pure C by the 17-year-old Nicolas Piro
+ The purpose of this project was just entrertainment at the beginning but
+ now that the thing has grown up a bit it has become something more
+ serious. The author attempts to improve the application whenever he has
+ enough time. But we must remember: he does it for free and he get's no
+ benefit from it.\par
+You do not have to pay anything for this program: it is absolute freeware.
+ But the author will apreciate a little amount of money, whatever amount you
+ find apropriate, to inspire him in the progamming and letting this project grow.\par
+If you are interested in the source code contact Nicolas Piro at
+nnp@hp1.uib.es\par\par
+\b
+The search engine\par
+\plain
+The program uses an improved alpha-beta search algorithm known as NegaScout.
+ I have been trying different algorithms but this one was the most effective.\par
+The algorithm basically works like the alpha-beta but with a little improvement.
+ It performs a normal search with an infinite window on the leftmost branch of the search
+ tree and establishes narrow search window with the value obtained from the
+ first search. It then performs a search with this window on the other nodes
+ of the tree. The result of this is that it performs a greater cutoff than
+ the alpha-beta and it's more reliable even if the tree isn't well ordered.\par
+This is how the computer searches the tree, but for an algorithm like
+ this to work efectively there has to be some good knowledge of the game
+ to give the board position a correct score in each situation. The score
+ of the position is given when the search has arrived to the leaf nodes of the
+ tree. In other words, when the computer has searched the number of plies
+ the user had specified. When this happends the Evaluate() macro, which computes
+ the position score resting the score for the second player from the score for
+ the first player, is called. The computer doesn't determine the score of the
+ position with this macro. Each time a move is made a score variable for each player
+ is updated. So the Evaluate() macro only returns the value of this variable.
+ I found this an efective way of solving the evaluation problem, but I know of
+ many good programs that compute the value just at the leaf nodes.\par
+The score of a player for a position is in function of the number of connections
+ in a row that are not blocked by the opponent's pieces. It is the sum of the
+ score for all the squares in the board. The score for a square
+ is given by the formula:\par\par
+	 score = 1*A*B^N\par\par
+where A is 1 if the square is for the player to move or -1 if it's for the
+ other player, B is 4 in agressive mode and 2 in defensive mode, and N is the
+ number of pieces of the same color the square piece that are connected and
+ not blocked by the opponent's pieces.\par\par
+
+
+\par
+\page
